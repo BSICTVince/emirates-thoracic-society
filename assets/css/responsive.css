@@ -1,0 +1,251 @@
+@media (max-width: 820px) {
+  .video-fade {
+    aspect-ratio: 9 / 16;
+  }
+
+  .logo {
+    left: 21% !important;
+    top: 37% !important;
+  }
+
+  .logo img {
+    width: 180px;
+    height: 93px;
+  }
+
+  .image-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-fade {
+    aspect-ratio: 9 / 16;
+  }
+
+  .logo {
+    left: 21% !important;
+    top: 37% !important;
+  }
+
+  .logo img {
+    width: 180px;
+    height: 93px;
+  }
+
+  .banner-content p {
+    font-size: 1.5em;
+  }
+
+  .sub-img {
+    column-count: 1;
+  }
+
+  .display-5 {
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: calc(2.425rem + 3.1vw);
+  }
+
+  .ets-goal {
+    background-image: url(../images/gallery-main.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* width: 100%; */
+    height: 81vh;
+  }
+
+  .ask-question-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-faq.png);
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-size: cover;
+    /* or use 'contain' based on image */
+    opacity: 0.5;
+    /* Adjust this value to control fade level */
+    z-index: 0;
+  }
+
+  .contact-us-form {
+    min-height: 82vh !important;
+  }
+
+  .contact-us-form .container {
+    padding-top: 4rem;
+  }
+
+  .form-title {
+    display: inline-block;
+    line-height: 1 !important;
+  }
+
+
+  .image-container {
+    height: 400px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .video-fade {
+    aspect-ratio: 9 / 16;
+  }
+
+  .logo {
+    left: 21% !important;
+    top: 37% !important;
+  }
+
+  .logo img {
+    width: 180px;
+    height: 93px;
+  }
+
+  .contact-us-form {
+    min-height: 70vh !important;
+  }
+
+  .form-title {
+    display: inline-block;
+    line-height: 1 !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .banner-hero-bottom {
+    position: absolute;
+    bottom: -3px;
+  }
+
+  .contact-us-form {
+    min-height: 70vh !important;
+  }
+
+  .form-title {
+    display: inline-block;
+    line-height: 1 !important;
+  }
+
+}
+
+@media (max-width: 414px) {
+  .banner-hero-bottom {
+    position: absolute;
+    bottom: -1px;
+  }
+
+  .contact-us-form {
+    min-height: 70vh !important;
+  }
+
+  .form-title {
+    display: inline-block;
+    line-height: 1 !important;
+  }
+
+
+}
+
+@media (max-width: 390px) {
+
+
+  .banner-content h3 {
+    font-size: 3em !important;
+  }
+
+  .banner-content {
+    padding-top: 5em !important;
+    position: relative;
+    z-index: 9;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .banner-content h3 {
+    font-size: 3em !important;
+  }
+
+  .banner-content {
+    padding-top: 5em !important;
+    position: relative;
+    z-index: 9;
+  }
+
+  .contact-us-form .container {
+    padding-top: 0rem;
+  }
+
+
+
+  .contact-us-form {
+    min-height: 70vh !important;
+  }
+
+  .form-title {
+    display: inline-block;
+    line-height: 1;
+
+  }
+
+
+
+
+}
+
+@media (max-width: 1600px) {
+  .logo {
+    left: 16%;
+  }
+
+  .nav-menu-style {
+    margin-left: 206px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .logo {
+    left: 12%;
+  }
+
+  .hero-section img {
+    width: inherit;
+  }
+
+  .img-fluid {
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 1190px) {
+  .nav-menu-style {
+    margin-left: 220px;
+  }
+
+  .image-container {
+    height: 364px;
+  }
+}
+
+@media (max-width: 1024x) {
+
+  .image-container {
+    height: 170px;
+  }
+}
+
+/* @media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1112px) {
+  .nav-rtl {
+    direction: rtl;
+  }
+} */

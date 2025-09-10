@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-color-1: #108D53;
+  --main-color-2: #43AC12;
+  --text-color-1: #232323;
+  --color-tertiary: #D9ED10;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+}
+
+
+/* Apply to all text elements inside body */
+body *:not(script):not(style) {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.text-color-primary {
+  color: var(--main-color-1) !important;
+}
+
+.text-color-secondary {
+  font-size: 44px;
+  color: var(--main-color-2) !important;
+}
+
+.text-color-tertiary {
+  color: var(--color-tertiary) !important;
+}
+
+.text-color-light {
+  color: var(--color-light) !important;
+}
+
+.text-color-dark {
+  color: var(--color-dark) !important;
+}
+
+.text-size-44 {
+  font-size: 44px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+
+
+.header-wrapper {
+  position: relative;
+  background-image: url(../images/hero-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.video-overlay-wrapper video {
+  object-fit: cover;
+  width: 100% !important;
+  left: 0% !important;
+
+
+}
+
+.video-fade {
+  object-fit: cover;
+  width: 100%;
+
+
+  /* Radial fade: white on the left, transparent on the right */
+  -webkit-mask-image: radial-gradient(ellipse at left center,
+      white 0%,
+      rgba(255, 255, 255, 1) 30%,
+      transparent 80%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  mask-image: radial-gradient(ellipse at left center,
+      white 0%,
+      rgba(255, 255, 255, 1) 30%,
+      transparent 80%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  aspect-ratio: 16 / 8;
+}
+
+
+.endorsement-request {
+  background-image: url(../images/Group-411.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  /* Preserves original image dimensions */
+  min-height: 300px;
+  /* Optional: Set a minimum height for visibility */
+}
+
+.ets-goal {
+  background-image: url(../images/gallery-main.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  /* width: 100%; */
+  height: 81vh;
+}
+
+
+
+
+.header-top {
+  position: relative;
+  z-index: 2;
+  padding: 11.5px 0;
+}
+
+.logo {
+  position: absolute;
+  top: -70%;
+  left: 19%;
+  transform: translate(-50%, 40%);
+  z-index: 3;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.logo img {
+  width: 250px;
+
+}
+
+.membership-buttons {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.membership-buttons .btn {
+  white-space: nowrap;
+  height: 38px;
+  border-radius: 0px;
+  background-color: #138A44;
+
+}
+
+
+
+/* hero section start*/
+/* .hero-section {
+  z-index: -1;
+  min-height: 837px;
+} */
+
+/* .hero-section img {
+  width: inherit;
+} */
+
+.hero-content-overlay {
+  background-color: #ffffffc9;
+  width: 1259px;
+  height: 560px;
+  border-radius: 50%;
+  padding: 170px 100px 170px 274px;
+}
+
+.hero-section h1 {
+  color: var(--main-color-1);
+  font-size: 50px;
+}
+
+.hero-section p {
+  color: var(--text-color-1);
+  font-size: 40px;
+}
+
+header::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background-image: url(../images/hero-bottom.png);
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.banner-content {
+  padding-top: 13em;
+  position: relative;
+  z-index: 9;
+}
+
+.banner-content h3 {
+  color: #138A44;
+  font-size: 3em;
+  text-transform: uppercase;
+  z-index: 9;
+}
+
+.banner-content p {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  z-index: 9;
+}
+
+.banner-bg-img {
+  position: absolute;
+  top: 21%;
+  left: 7%;
+  z-index: 1;
+}
+
+.banner-bg-img img {
+  width: 65%;
+}
+
+.banner-hero-bottom {
+  position: absolute;
+  bottom: -18px;
+}
+
+.banner-hero-bottom img {
+  width: 100%;
+  margin: auto;
+}
+
+/* hero section end */
+
+/* about section start*/
+.about-section {
+  min-height: 500px;
+}
+
+.about-section h2 {
+  color: var(--main-color-2);
+}
+
+.about-section h3 {
+  color: #138A44;
+}
+
+.about-section p {
+  color-scheme: var(--text-color-1);
+}
+
+.btn {
+  background-color: var(--main-color-2);
+}
+
+/*.about-section::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background-image: url(../images/about-bottom.png);
+  bottom: 0px; 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-position-y: bottom; 
+}*/
+
+/* about section end*/
+
+/* about section 2 start*/
+#about-2 {
+  padding-bottom: 0px !important;
+}
+
+.about-section-2 {
+  min-height: 500px;
+  background-color: var(--main-color-1);
+}
+
+
+
+.hero-bottom img {
+  width: 100%;
+  margin: auto;
+}
+
+.prof-name h3 {
+  color: #D8EC10;
+  font-weight: bold;
+}
+
+.prof-name h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+/* about section 3 start*/
+
+.thumbnail-img {
+  position: relative;
+}
+
+.thumbnail-img img {
+  width: 100%;
+  margin: auto;
+}
+
+.about-3-details {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 14%;
+}
+
+.about-3-details h4 {
+  color: #108D53;
+  font-weight: bold;
+  font-size: 2.3em;
+}
+
+.about-3-details p {
+  font-weight: 500;
+}
+
+.sub-img {
+  column-count: 4;
+}
+
+.sub-img img {
+  display: flex;
+  width: 100%;
+  object-fit: none;
+}
+
+.contact-us-form form .btn-success {
+  background-color: #1E5125;
+  border-radius: 7px;
+  width: 12rem;
+}
+
+.contact-us-form .container {
+  position: relative;
+  padding-top: 4rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.contact-us-form .container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #ffffff;
+  /* or whatever background you want */
+  opacity: 0.8;
+  /* adjust transparency level */
+  z-index: 0;
+}
+
+.contact-us-form .container>* {
+  position: relative;
+  z-index: 1;
+}
+
+
+section#about-4 {
+  position: relative;
+  background-color: #F5F3FB;
+  padding: 80px 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+section#about-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* or 'contain' if needed */
+  opacity: 0.6;
+  /* Adjust this for more or less fade */
+  z-index: 0;
+}
+
+section#about-4>* {
+  position: relative;
+  z-index: 1;
+}
+
+
+.ev-wrap {
+  background-color: #fff;
+  padding: 10px 10px;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+}
+
+.mission-vission h3 {
+  padding-bottom: 10px;
+}
+
+.ev-wrap h5 {
+  color: #108D53;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.ask-question-form-section {
+  position: relative;
+  z-index: 10;
+  margin-top: -53px;
+  /* Adjust to control how much overlap occurs */
+  margin-bottom: -2rem;
+}
+
+.ask-question-form {
+  position: relative;
+  background-color: #fff;
+  /* Optional: keep a base color */
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ask-question-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/bg-faq.png);
+  background-repeat: no-repeat;
+  background-position: unset;
+  background-size: cover;
+  /* or use 'contain' based on image */
+  opacity: 0.5;
+  /* Adjust this value to control fade level */
+  z-index: 0;
+}
+
+.ask-question-form>* {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form .form-control::placeholder {
+  font-size: 16px;
+  color: #bdbdbd;
+  opacity: 0.6;
+}
+
+footer {
+  background-color: #108D53;
+}
+
+.contact-form div .btn {
+  border-radius: 20px;
+  background-color: var(--main-color-1);
+}
+
+#contact-us .form-control {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 0.675rem 0.75rem !important;
+
+  /* X = right, Y = bottom */
+  border: none;
+}
+
+#contact-us .form-control::placeholder {
+  font-size: 14px;
+  color: #8d8d8d;
+  opacity: 0.6;
+}
+
+.form-title {
+  display: inline-block;
+  transform: scaleY(1.8);
+  line-height: 2.5;
+  font-size: 18px;
+}
+
+
+
+
+
+.contact-us-bottom-img {
+  position: relative;
+  display: inline-block;
+  /* or block if needed */
+}
+
+.contact-us-bottom-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(204 204 204 / 50%), rgba(255, 255, 255, 0));
+  pointer-events: none;
+  /* Let clicks pass through */
+  z-index: -1;
+}
+
+.contact-us-bottom-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  position: relative;
+}
+
+
+/* Board member section */
+.section-1 {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.board-members {
+  width: 80%;
+  margin: auto;
+  /* display: flex;
+    justify-content: center; */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 237px;
+  /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-img,
+.foreground-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.foreground-img {
+  z-index: 1;
+  /* Ensures the foreground image is above the background image */
+}
+
+img.foreground-img {
+  transition: 0.2s ease-in-out;
+}
+
+.profile {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sec-title p {
+  font-size: 32px;
+  color: #234480;
+}
+
+.sec-titl h5 {
+  color: #ff0000;
+}
+
+.sec-title hr {
+  width: 286px;
+  margin: auto;
+  border-top: 1px solid red;
+}
+
+.position {
+  color: var(--main-color-1);
+  font-size: 13px;
+}
+
+.board-member:hover img.foreground-img {
+  width: 103%;
+  transition: 0.3s ease-in-out;
+}
+
+h5 {
+  color: red;
+}
+
+.board-member:hover h5.name-member {
+  color: var(--main-color-2);
+}
+
+.board-member:hover p.position {
+  color: var(--main-color-2);
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--✅ Meta SEO -->
+        <title>ETS</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+        <!-- CSS Linking -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/animation.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <link rel="stylesheet" href="assets/css/navigation.css" />
+        <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+
+        <!-- Font Awesome 6 Free CDN -->
+        <script src="https://kit.fontawesome.com/9f6e90d4ba.js" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+
+    <body>
+        <div class="header-wrapper">
+            <!-- ✅ Background Video Overlay -->
+
+            <div class="video-overlay-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
+                <div class="video-fade">
+                    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover">
+                        <source src="assets/images/hero-video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Optional: Background image to show through the transparent edges -->
+            <img src="assets/images/hero-banner.jpg" alt="Hero Background" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-0" style="opacity: 0.01;" />
+
+            <!-- Header -->
+            <div class="header-top container-fluid">
+                <div class="container-xl d-flex justify-content-between align-items-center position-relative">
+                    <div class="membership-buttons ms-auto d-flex flex-column flex-md-row">
+                        <a href="#" class="btn btn-success border-0">Become an EMA Member</a>
+                        <a href="#" class="btn btn-success border-0">Become an ETS Member</a>
+                    </div>
+                </div>
+
+                <!-- Overlapping Logo -->
+                <div class="logo text-center">
+                    <a href="/"><img src="assets/images/logo.png" class="img-fluid" alt="ETS Logo" /></a>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark nav_backcolor nav-rtl">
+                <div class="container-xl flex-row-reverse">
+                    <!-- <a class="navbar-brand fw-bold" href="#">
+        <img src="assets/images/logo.png" alt="logo" width="225" height="146">
+      </a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-menu-style" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item d-flex justify-content-end">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-end">
+                                <a class="nav-link" href="about-us.html" target="_blank" rel="noopener noreferrer">About us</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-end">
+                                <a class="nav-link" href="board-members.html" target="_blank" rel="noopener noreferrer">ETS Board Members</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-end">
+                                <a class="nav-link" href="special-interest.html" target="_blank" rel="noopener noreferrer">ETS Special Interest</a>
+                            </li>
+                            <li class="nav-item dropdown d-flex flex-wrap flex-column align-content-end align-items-end flex-lg-row justify-content-end">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Conferences
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <!-- Upcoming Events with Submenu -->
+                                    <li class="dropdown dropend">
+                                        <a class="dropdown-item dropdown-toggle submenu-toggle" href="#" id="upcomingEventsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Upcoming Events
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="upcomingEventsDropdown">
+                                            <li><a class="dropdown-item" href="https://etsociety.ae/2025/" target="_blank" rel="noopener noreferrer">2025 Congress</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Previous Events with Submenu -->
+                                    <li class="dropdown dropend">
+                                        <a class="dropdown-item dropdown-toggle submenu-toggle" href="#" id="previousEventsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Previous Events
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="previousEventsDropdown">
+                                            <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">2024 Congress</a></li>
+                                            <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">2023 Congress</a></li>
+                                            <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">2022 Congress</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-items d-flex justify-content-end">
+                                <a class="nav-link" href="contact-us.html" target="_blank" rel="noopener noreferrer">Contact us</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row justify-content-end">
+                            <li class="nav-item me-3 me-lg-1">
+                                <a class="nav-link soc-med-icon-style" href="#"><img src="assets/images/Icon-awesome-facebook-f.png" class="mx-auto" alt="" /></a>
+                            </li>
+                            <li class="nav-item me-3 me-lg-1">
+                                <a class="nav-link soc-med-icon-style" href="#"><img src="assets/images/Icon-metro-instagram.png" class="mx-auto" alt="" /></a>
+                            </li>
+                            <li class="nav-item me-3 me-lg-1">
+                                <a class="nav-link soc-med-icon-style" href="#"><img src="assets/images/Icon-awesome-linkedin-in.png" class="mx-auto" alt="" /></a>
+                            </li>
+                            <li class="nav-item me-3 me-lg-1">
+                                <a class="nav-link soc-med-icon-style" href="#"><img src="assets/images/Icon-simple-tiktok.png" class="mx-auto" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container fade-in-up">
+                <div class="banner-content">
+                    <img src="assets/images/logo-bare.png" class="img-fluid" />
+                    <h3><strong>Emirates Thoracic Society</strong></h3>
+                    <p>Leading Respiratory Health Initiatives</p>
+                </div>
+                <!-- <div class="banner-bg-img">
+        <img src="assets/images/Ellipse.png">
+      </div> -->
+            </div>
+
+            <div class="banner-hero-bottom">
+                <img src="assets/images/hero-bottom.png" class="img-fluid" />
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-white about-section">
+            <div class="container fade-in-up">
+                <div class="row">
+                    <div class="col-12 col-lg-8 pb-3 pb-lg-0">
+                        <h2 class="display-5 fw-bold mb-0">Emirates Thoracic Society (ETS)</h2>
+                        <h3 class="display-6">Leading Respiratory Health Initiatives</h3>
+                        <p class="lead">
+                            Respiratory diseases continue to be a major health concern in the UAE, affecting individuals of all ages. The Emirates Thoracic Society (ETS) is committed to raising awareness, promoting early diagnosis, and
+                            enhancing the management of respiratory conditions through scientific research, educational programs, and public health campaigns.
+                        </p>
+                        <p class="lead">
+                            As the official respiratory society in the UAE, ETS operates under the Emirates Medical Association, which has been a cornerstone of medical advancement since 1980. ETS serves as a vital platform for
+                            pulmonologists, healthcare professionals, and patients by offering up-to-date guidelines, expert-led symposiums, and a wealth of online resources dedicated to respiratory health.
+                        </p>
+                        <button type="button" class="btn rounded-0 text-white">Read About Us</button>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <img src="assets/images/about-img.png" style="width: 100%;" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section 2 -->
+        <img src="assets/images/about-bottom.png" style="width: 100%;" alt="" />
+
+        <section id="about-2" class="about-section-2">
+            <div class="container fade-in-up">
+                <div class="row">
+                    <div class="col-12 col-lg-8 text-white">
+                        <h4 class="display-6 fw-bold mb-0 text-color-tertiary">Emirates Thoracic Society (ETS)</h4>
+                        <h2 class="display-5">Leading Respiratory Health Initiatives</h2>
+                        <p class="lead">
+                            Platform uniting pulmonologists, healthcare professionals, and patients with a shared commitment to advancing respiratory health, fostering knowledge exchange, and improving the quality of care in the United Arab
+                            Emirates.
+                        </p>
+                        <p class="lead">
+                            As respiratory diseases continue to present significant challenges, ETS remains dedicated to providing the latest medical insights, organizing scientific conferences, conducting specialized training workshops,
+                            and leading impactful awareness initiatives to promote a healthier community.
+                        </p>
+                        <p class="lead">
+                            In 2025 and beyond, we strive to expand our activities, strengthen collaborations among experts, and support cutting-edge research in respiratory medicine. I invite you to explore our website, take advantage of
+                            its valuable resources, and join us in our mission to shape a future of better respiratory health for all.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <img src="assets/images/about-img-2.png" style="width: 100%;" alt="" />
+                        <br />
+                        <div class="prof-name ps-5 py-5">
+                            <h3>PROF. ASHRAF ALZAABI</h3>
+                            <h4>PRESIDENT, EMIRATES THORACIC SOCIETY</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <img src="assets/images/hero-bottom.png" class="img-fluid" />
+            </div>
+        </section>
+
+        <section class="ets-goal w-100" style="position: relative;">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row vh-100 fade-in-up">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-4">
+                            <h2 class="display-5 text-color-primary fw-bold">Our Main Goal</h2>
+                            <p class="text-justify fade-in-up lead">
+                                To reduce the impact of Emirates Thoracic Society (ETS) and related conditions by advancing prevention, treatment, and support through specialized care and research.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <!-- Image or illustration goes here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-3" class="gallery-wrapper">
+            <!-- 
+    <div class="thumbnail-img">
+      <div class="main-img">
+        <img src="assets/images/gallery-main.png" alt="">
+      </div>
+      <div class="container about-3-details">
+        <h4>OUR MAIN GOAL</h4>
+        <p>To reduce the impact of Emirates Thoracic Society (ETS) and related conditions by advancing prevention,
+          treatment, and support through specialized care and research.</p>
+      </div>
+    </div>
+-->
+            <div class="sub-img py-2">
+                <img src="assets/images/gallery-1.png" />
+                <img src="assets/images/gallery-2.png" />
+                <img src="assets/images/gallery-3.png" />
+                <img src="assets/images/gallery-4.png" />
+            </div>
+        </section>
+
+        <section id="about-4" class="mission-vission">
+            <div class="container fade-in-up">
+                <h3 class="text-center text-color-secondary"><strong>ETS MISSION & VISSION</strong></h3>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 pt-2">
+                        <div class="ev-wrap">
+                            <h5>Mission</h5>
+                            <p class="lead">
+                                The Emirates Thoracic Society (ETS) is committed to advancing respiratory health in the UAE by fostering excellence in patient care, medical education, scientific research, and public awareness. Through
+                                multidisciplinary collaboration, ETS aims to support healthcare professionals with cutting-edge knowledge, facilitate early detection and effective management of respiratory diseases, and advocate for
+                                policies that improve lung health. By integrating evidence-based practices, continuous professional development, and community outreach, ETS strives to elevate respiratory care standards and enhance the
+                                quality of life for individuals affected by pulmonary conditions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 pt-2">
+                        <div class="ev-wrap">
+                            <h5>Vision</h5>
+                            <p class="lead">
+                                To be the foremost authority in respiratory medicine in the UAE and the wider region, leading the way in innovation, education, and research to combat respiratory diseases. ETS envisions a future where
+                                advancements in pulmonary medicine translate into improved healthcare outcomes, where public awareness empowers individuals to take charge of their respiratory health, and where strong partnerships between
+                                medical professionals, academic institutions, and policymakers drive sustainable improvements in lung health. Through scientific excellence and strategic initiatives, ETS aspires to shape the future of
+                                respiratory care, ensuring healthier communities for generations to come.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ask-question-form-section">
+            <div class="container fade-in-up">
+                <div class="ask-question-form bg-white shadow p-4 p-md-5 rounded">
+                    <h3 class="text-color-secondary text-center mb-2 fw-bold">Ask a Question</h3>
+                    <p class="text-center text-color-primary text-muted mb-4" style="font-size: 28px;">Connect with the leaders in the society</p>
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="First Name" required />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last Name" required />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email" required />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Phone" />
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Interest Area" />
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                            </div>
+                            <div class="col-12 text-left">
+                                <button type="submit" class="btn btn-success px-5">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="endorsement-request d-flex align-items-center justify-content-center text-center text-white">
+            <div class="container fade-in-up">
+                <h2 class="mb-3 text-size-44">Endorsement Request</h2>
+                <p class="mb-2 lead">
+                    For activity endorsement by the ETS Society, kindly download and fill in the form and send it to:
+                    <a href="mailto:events@mco.ae" class="text-white fw-bold text-decoration-none"><span style="color: #138a44;">events@mco.ae</span></a>
+                </p>
+                <!-- <a href="path-to-form.pdf" class="btn btn-outline-light mt-3" download>Download Form</a> -->
+                <a href="#" class="btn btn-success border-0">Download Form</a>
+            </div>
+        </section>
+
+        <section class="follow-up text-center py-5">
+            <div class="contact-us-bottom-img">
+                <img src="assets/images/hero-bottom.png" class="img-fluid" />
+            </div>
+
+            <div class="container fade-in-up">
+                <h2 class="text-success mb-3">Follow up</h2>
+                <p class="mb-3">To get in touch with ETS for any enquiries, please send an email to</p>
+
+                <!-- Social Icons -->
+                <div class="d-inline-flex px-3 py-2 gap-3 mb-3">
+                    <a href="#" class="text-success fs-5"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-success fs-5"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-success fs-5"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-success fs-5"><i class="fab fa-tiktok"></i></a>
+                </div>
+
+                <!-- Email -->
+                <p class="mb-0 text-success">Email: <a href="mailto:events@mco.ae" class="text-success">events@mco.ae</a></p>
+            </div>
+        </section>
+
+        <footer class="text-center text-muted py-2 mt-auto">
+            <div class="text-white container px-3 fade-in-up fw-bold lead">
+                <small>
+                    Copyright &copy; Emirates Thoracic Society 2025. All Rights Reserved | Website developed and maintained by: MCO
+                </small>
+            </div>
+        </footer>
+    </body>
+</html>
